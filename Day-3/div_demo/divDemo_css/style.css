@@ -1,0 +1,23 @@
+div {
+    /* w,h,b of div */
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+
+    /* 20 px gap from left ,if content present there then from content -> 20 px gap */
+    margin-left: 20px;
+    /*  specifying 40 px gap from the content above div, not marging*/
+    margin-top: 40px;
+    /* 30 px marging inside div */
+    padding-left: 30px;
+    /* 40 px top margin inside div */
+    padding-top: 40px;
+    /* border for our div */
+    border: 5px solid tomato;
+}
+
+/* class for colours */
+.colourBucketClass {
+    color: blueviolet;
+    background-color: chartreuse
+}
