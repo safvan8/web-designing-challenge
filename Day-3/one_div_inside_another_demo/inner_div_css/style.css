@@ -1,0 +1,27 @@
+/* our first div*/
+.first-div {
+    background-color: aqua;
+    color: red;
+    width: 600px;
+    height: 400px;
+
+    /* first div mraging from left  side of browser */
+    margin-left: 40px;
+    /*padding to write something inside innner div*/
+    padding-left: 20px;
+}
+
+/* div inside another div */
+.inner-div {
+    width: 400px;
+    height: 240px;
+    margin-top: 20 px;
+    /* inner div margin from first div */
+    margin-left: 50px;
+    /* marging to write inside inner div*/
+    padding-left: 50px;
+
+    background-color: yellow;
+    color: grey;
+}
+
