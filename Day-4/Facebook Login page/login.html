@@ -25,7 +25,7 @@
                     <form>
                         <table>
                             <tr>
-                                <td ><label class="login-label">Emial or Mobile</label></td>
+                                <td><label class="login-label">Emial or Mobile</label></td>
                                 <td><label class="login-label">Password</label></td>
                             </tr>
                             <tr>
@@ -35,7 +35,8 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><a class="forgotten-accnt-txt" href="forgot-account.html">forgotten account? </a></td>
+                                <td><a class="forgotten-accnt-txt" href="forgot-account.html">forgotten account? </a>
+                                </td>
                             </tr>
 
                         </table>
@@ -51,12 +52,51 @@
                 <p class="conect-with-ppl-para">
                     Facebook helps you to connect and share with <br>the people in your life
                 </p>
-                <img class="fb-image-people"  src="fb_connect.png" alt="Image not availble please reload page">
+                <img class="fb-image-people" src="fb-image-people.png" alt="Image not availble please reload page">
             </div>
-
             <div class="right-section-of-main-content">
+                <h1 class="create-acct-txt">Create an account</h1>
+                <p class="quick-and-easy-text">it's quick and easy</p>
+            </div>
+
+            <div class="create-account-login-controls">
+                <form action="createAccountServlet">
+                    <div class="fname-lname-aligin">
+                        <input type="text" placeholder="First name"> <input type="text" placeholder="last name">
+                    </div>
+                    <div class="create-form-details">
+                        <input type="text" placeholder="Mobile Number or Email adress" size="46">
+                        <br>
+                        <input type="text" placeholder="New Password" size="46" >
+                    </div>
+                    <br>
+                    <p style="font-size: medium;font-weight:700;color: gray;">Birthday</p>
+                    <div class="birth-date-selection">
+                        <select name="" id="" style="border: solid 1px;border-color: gray;">
+                            <option name="day">Day</option>
+                            <option name="day">1</option>
+                            <option name="day">2</option>
+                            <option name="day">3</option>
+                            <option name="day">4</option>
+                        </select>
+                        <select name="" id="" style="border: solid 1px;border-color: gray;">
+                            <option value="month">Month</option>
+                            <option value="month">Jan</option>
+                            <option value="month">Feb</option>
+                            <option value="month">Mar</option>
+                        </select>
+                        <select name="" id="" style="border: solid 1px;border-color: gray;">
+                            <option value="year">Year</option>
+                            <option value="year">2000</option>
+                            <option value="year">2001</option>
+                            <option value="year">2002</option>
+                        </select>
+                    </div>
+                    <h4 style="font-size: medium;font-weight:700;color: gray;">Gender</h4>
+                </form>
 
             </div>
+
         </div>
 
     </div>
