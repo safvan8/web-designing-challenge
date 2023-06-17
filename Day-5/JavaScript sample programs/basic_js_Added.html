@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="show()">Click me</button>
+    <script>
+        function show() {
+            console.log("button clicked......");
+
+            // var can be redeclared ,it will not create any errors, will make program less safe
+            var num = 112;
+            var num = "safvan";
+            console.log("Value inside var nume is:" + num);
+
+            // reccomended to use 'let' for variable declaration, it will not allow to redecalre same variable again
+            let num2 = 677723.43;
+
+            /**
+             * Identifier 'num2' has already been declared (at basic_js_Added.html:24:17)
+             *  let num2="java springboot developer";
+             */
+
+            let a = 2.7;
+            let b = "- Springboot";
+            console.log(a + b);  // 2.7-Springboot
+
+            let count = 19;
+            if (count < 100) {
+                console.log("number is less than 100 ")
+            }
+            else {
+                console.log("number is greater than 100 or equal to 100")
+            }
+            // output : number is less than 100 
+
+            // creating a simple array, can add any type of data
+            let sampleArray = ["safvan", "SpringBoot", "Microoservices developer", 21, 96.6743];
+            console.log(sampleArray);
+            /**
+             * Output: ['safvan', 'SpringBoot', 'Microoservices developer', 21, 96.6743]
+             */
+
+        }
+    </script>
+</body>
+
+</html>
