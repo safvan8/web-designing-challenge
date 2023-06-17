@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="user-entered-value">
+    <button onclick="display()"> clik here to disply what you entered </button>
+
+    <h1 id="heading-dummy">dummy content</h1>
+
+
+
+    <script>
+        function display() {
+            let userInput = document.getElementById("user-entered-value").value;
+
+            // replaciing dummy value with user entered
+            document.getElementById("heading-dummy").innerHTML = userInput;
+
+            // to show an alert to user if they entered Crossroads
+            if (userInput == "Crossroads") {
+                alert("You typed Crossroads");
+            }
+            else {
+                alert(" bye......");
+            }
+        }
+    </script>
+</body>
+
+</html>

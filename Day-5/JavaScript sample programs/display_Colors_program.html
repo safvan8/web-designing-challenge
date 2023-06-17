@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Defining id myColorBox */
+    #myColorBox {
+        width: 300px;
+        height: 300px;
+        border: solid 1px;
+    }
+</style>
+
+<body>
+    <div id="myColorBox">
+
+    </div>
+ 
+    <button onclick="displayColor('green')">Green</button>
+    <button onclick="displayColor('blue')">Blue</button>
+    <button onclick="displayColor('red')">Red</button>
+    <button onclick="displayColor('yellow')">Yellow</button>
+
+    <script>
+        function displayColor(color) {
+            document.getElementById("myColorBox").style.background = color;
+        }
+    </script>
+</body>
+
+</html>
