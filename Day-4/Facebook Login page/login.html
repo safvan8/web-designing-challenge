@@ -59,13 +59,12 @@
                 <h1 style="font-weight: bold;">Create an account</h1>
                 <p style="font-size: 20px;font-weight: 600;">it's quick and easy</p>
 
-                <div class="create-account-login-controls">
-                    <form action="/createAccountServlet" style="border-spacing:10px">
+                <div class="create-account-login-controls" >
+                    <form action="/createAccountServlet" id="signup-form">
+                       
                         <div class="signup-field">
-                            <div >
-                                <input type="text" placeholder="First name" class="fname-lname-effects">
-                                <input type="text" placeholder="Last name" class="fname-lname-effects">
-                            </div>
+                                <input name="fname" type="text" placeholder="First name" class="fname-lname-effects">
+                                <input name="lname" type="text" placeholder="Last name" class="fname-lname-effects">
                         </div>
                         <div class="signup-field">
                             <input type="text" placeholder="Mobile Number or Email adress" class="field">
@@ -109,14 +108,22 @@
                             </div>
                         </div>
 
+                        <div>
+                            <button type="submit" class="sbt-button">Sign Up</button>
+                        </div>
+
                     </form>
 
                 </div>
-
             </div>
+
         </div>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="valiadtion_program.js"></script>
 
 </body>
 

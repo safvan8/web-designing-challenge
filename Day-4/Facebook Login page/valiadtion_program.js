@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $("#signup-form").validate({
+        rules:{
+            fname:{
+                required:true,
+                minlength:4,
+                maxlength:10
+            },
+            lname:{
+                required:true,
+                minlength:2,
+                maxlength:8
+            }
+        }
+    })
+})

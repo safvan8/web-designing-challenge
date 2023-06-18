@@ -121,3 +121,14 @@ body {
     font-size:100%;
     font-weight: 600;
 }
+
+.sbt-button {
+    margin: 30px;
+    background-color: #34c24c;
+    color: white; /* Set the text color to white */
+    font-weight: bold; /* Make the text bold */
+    border-width: 0px;
+    font-size: 18px; /* Adjust the font size as desired */
+    padding: 10px 20px; /* Add padding to increase the button size */
+  }
+  
