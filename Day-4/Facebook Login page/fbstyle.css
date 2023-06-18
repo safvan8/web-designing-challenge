@@ -9,16 +9,24 @@ body {
     height: 85px;
 }
 
+.login {
+    width: 50%;
+    float: left;
+}
+
+.login-controls {
+    margin-left: 115px;
+    /* to move all login control div content */
+}
+
+
 .logo {
     width: 50%;
     padding-top: 10px;
     float: left;
 }
 
-.login {
-    width: 50%;
-    float: left;
-}
+
 
 .logo-text {
     color: white;
@@ -32,15 +40,6 @@ body {
 .login-label {
     color: white;
     font-size: 12px;
-}
-
-.login-controls {
-    margin-left: 115px;
-    /* to move all login control div content */
-}
-
-.forgotten-accnt-txt {
-    color: #3b65c0;
 }
 
 .forgotten-accnt-txt {
@@ -74,9 +73,9 @@ body {
 }
 
 .right-section-of-main-content {
-    width: 46%;
+    width: 40%;
     float: left;
-    margin-left: 9px;}
+    margin-left: 8px;
 }
 
 .conect-with-ppl-para {
@@ -90,21 +89,35 @@ body {
     height: 236px;
 }
 
+/* right section */
 
-.create-acct-txt
+.fname-lname-effects{
+    margin-bottom: 12px; /* gap after Fname and last name */
+    height: 30px;
+    border: 1px solid lightgray; /* Use 'lightgray' for the border color */
+    box-sizing: border-box;
+}
+
+.field {
+    width: 67%;
+    height: 30px;
+    margin-bottom: 7px; /* Add margin-bottom for the gap between input fields */
+    border: 1px solid lightgray; /* Use 'lightgray' for the border color */
+    box-sizing: border-box;
+  }
+  
+  
+.gray-text
 {
-    font-weight: bold;
-}
-.quick-and-easy-text
-{
-    font-size: 20px;
-    font-weight: 4px;
-}
-
-.create-form-details{
-    width: 100%;
-    padding: 4px 4px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: medium;
+    font-weight:700;
+    color: gray
 }
 
-.birth-date-selection-day{
+.gender-selector{
+    margin-top: 8px;
+    font-size:100%;
+    font-weight: 600;
 }
