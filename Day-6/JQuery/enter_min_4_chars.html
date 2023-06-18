@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 2 input fileds, we are only validation first input fiels, to conain min of 4 chars-->
+
+    <label for="useEnteredvalue">UseName</label>
+    <input type="text" id="useEnteredvalue"> <br>
+
+   <!-- Error message label with initial display set to none -->
+    <label id="error-msg" style="display: none;">Enter a minimum of 4 characters</label>
+
+    <!-- Another input field (without an ID) for demonstration purposes -->
+    <input type="text" id="other-input">
+
+    <!-- Linking jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Script to handle hiding/showing error message -->
+    <script>
+        // A function to execute after the DOM is ready
+        $(document).ready(function () {
+            // Event handler for when the useEnteredvalue input field loses focus
+            $("#useEnteredvalue").blur(function () {
+                // Get the value entered by the user
+                let userInput = $(this).val();
+
+                if (userInput.length < 4) {
+                    // alert("Enter Minimum 4 characters....");
+                    // above way is not reccomended, instead use below
+
+                    $('#error-msg').show();
+
+                } else {
+                      // If the input meets the required length, hide the error message
+                    $('#error-msg').hide();
+                }
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>
