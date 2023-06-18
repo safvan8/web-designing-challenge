@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id='btn'> Click here to hide box</button>
+
+    <div style="width: 300px;height: 300px;background-color: green;" id="my-box">
+
+    </div>
+
+    <!-- linking JQuery content Delivery Network-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        // execute below function when document is ready
+        $(document).ready(function(){
+
+            // checking if button clicked
+            $("#btn").click(function(){
+               
+                //  $("#my-box").hide(); to hide the box
+                // $("#my-box").toggle(3000); box will toglle hide in 3 seconds
+                $("#my-box").fadeToggle(2000); // fade togle in 3 seconds
+            })
+        })
+    </script>
+
+
+</body>
+</html>

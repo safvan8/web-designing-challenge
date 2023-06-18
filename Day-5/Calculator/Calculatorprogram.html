@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="script.js"></script>
+
+<body>
+    <div class="main-body">
+        <div class="calculator-box">
+            <!--Div for output screen-->
+            <div class="output-screen">
+                <input type="text" id="screen">
+            </div>
+
+            <button onclick="clearClaculatorDisplay()" class="clear-btn">CLEAR SCREEN</button>
+                
+            <!-- Div for all the remining things in calculator-->
+            <div class="calc-buttons">
+                <div class="row">
+                    <button onclick="processClick(7)" class="single-btn">7</button>
+                    <button onclick="processClick(8)" class="single-btn">8</button>
+                    <button onclick="processClick(9)" class="single-btn">9</button>
+                    <button onclick="processClick('/')" class="single-btn">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="processClick(4)" class="single-btn">4</button>
+                    <button onclick="processClick(5)" class="single-btn">4</button>
+                    <button onclick="processClick(6)" class="single-btn">6</button>
+                    <button onclick="processClick('*')" class="single-btn">X</button>
+                </div>
+                <div class="row">
+                    <button onclick="processClick(1)" class="single-btn">1</button>
+                    <button onclick="processClick(2)" class="single-btn">2</button>
+                    <button onclick="processClick(3)" class="single-btn">3</button>
+                    <button onclick="processClick('-')" class="single-btn">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="processClick('.')" class="single-btn">.</button>
+                    <button onclick="processClick(0)" class="single-btn">0</button>
+                    <button onclick="processClick('+')" class="single-btn">+</button>
+                    <button onclick="showResult()" class="single-btn">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

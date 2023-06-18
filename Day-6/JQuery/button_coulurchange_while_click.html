@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">Click Me</button>
+
+    <!-- Linking JQuery Content Delivery Network (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous">
+        </script>
+
+    <!-- Using Jqery API methods-->
+    <script>
+        $(document).ready(function () {
+
+            // create an alert during button click
+            $("#btn").click(function () {
+                alert("Button clicked......");
+            })
+
+            // create an action when mouse enterd over button
+            $("#btn").mouseenter(function () {
+                // set css property for yellow colour background
+                $(this).css({ "background": "yellow" });
+            })
+        })
+    </script>
+</body>
+
+</html>
