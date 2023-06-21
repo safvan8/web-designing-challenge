@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -15,13 +15,13 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
 
     <!-- header tag for folowing bootsrap symantics-->
-    <header class="bg-success">
+    <header class="custom-header-background" style="position: fixed;width: 100%;z-index: 1;">
         <div class="row text-white">
             <!-- header division left part-->
             <div class="col-9 col-md-6 p-3 pl-5">
@@ -41,16 +41,19 @@
 
                         <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Sevices</a>
+                                <a class="nav-link text-white" href="#services-section">Sevices</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Experience</a>
+                                <a class="nav-link text-white" href="#skills-section">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact Me</a>
+                                <a class="nav-link text-white" href="#experiences-section">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contact-me-form">Contact Me</a>
                             </li>
                         </ul>
                     </div>
@@ -59,7 +62,7 @@
         </div>
     </header>
 
-    <section class="p-4">
+    <section id="home-section" style="padding-top:7rem">
         <div class="container-fliud">
             <div class="row align-items-center">
 
@@ -86,17 +89,17 @@
     </section>
 
     <!--Section for Services and Skills-->
-    <section class="bg-success p-5  bg-opacity-75">
-        <div class="container">
+    <section class="services-skills-experiences p-5 ">
+        <div class="container ">
 
             <!-- row for services-->
-            <h1 class="text-center text-white">Services</h1>
-            <div class="row pl-5">
+            <h1 class="text-center text-dark" id="services-section" >Services</h1>
+            <div class="row pl-5" >
                 <!-- to see services 3 in one row for medium devices-->
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-5" style="width: 18rem;height: 21rem;">
-                        <i class="fa-solid fa-code fa-beat display-1 text-success" style="animation-duration: 5s;"></i>
+                        <i class="fa-solid fa-code fa-beat display-1 text-info" style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">Web Designing</h5>
                             <p class="card-text"> Creating visually appealing and user-friendly websites.</p>
@@ -107,7 +110,7 @@
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-4" style="width: 18rem;height: 21rem;">
-                        <i class="fa-solid fa-window-restore fa-beat display-1 text-success"
+                        <i class="fa-solid fa-window-restore fa-beat display-1 text-info"
                             style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">Fullstack Application Developement</h5>
@@ -120,7 +123,7 @@
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-5" style="width: 18rem;height: 21rem;">
-                        <i class="fa-solid fa-icons fa-beat display-1 text-success" style="animation-duration: 5s;"></i>
+                        <i class="fa-solid fa-icons fa-beat display-1 text-info" style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">Social Media Promotion</h5>
                             <p class="card-text">Strategizing and executing marketing campaigns on social media
@@ -133,13 +136,13 @@
 
             <br>
             <!-- row for skills-->
-            <h1 class="text-center text-white pb-4">Skills</h1>
-            <div class="row pl-5">
+            <h1 class="text-center text-dark pb-4">Skills</h1>
+            <div class="row pl-5" id="skills-section">
 
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-3" style="width: 18rem;height: 21rem;">
-                        <i class="fa-brands fa-java fa-beat display-1 text-success" style="animation-duration: 5s;"></i>
+                        <i class="fa-brands fa-java fa-beat display-1 text-info" style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">Java, JEE,<br>SpringBoot Application Developement</h5>
                             <p class="card-text">Developing applications using Java, Java Enterprise Edition (JEE), and
@@ -151,7 +154,7 @@
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-3" style="width: 18rem;height: 21rem;">
-                        <i class="fa-regular fa-file-code fa-beat display-1 text-success"
+                        <i class="fa-regular fa-file-code fa-beat display-1 text-info"
                             style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">HTML,CSS,JQuery,<br>Bootsrap,JavaScript</h5>
@@ -164,8 +167,7 @@
                 <div class="col-md-4 mt-2">
                     <!-- services card -->
                     <div class="card text-center p-3" style="width: 18rem;height: 21rem;">
-                        <i class="fa-solid fa-database fa-beat display-1 text-success"
-                            style="animation-duration: 5s;"></i>
+                        <i class="fa-solid fa-database fa-beat display-1 text-info" style="animation-duration: 5s;"></i>
                         <div class="card-body">
                             <h5 class="card-title">SQL,JDBC,Hibernate,<br>Spring Data JPA</h5>
                             <p class="card-text">Skilled in database management, SQL queries and advanced frameworks
@@ -178,8 +180,8 @@
 
             <br>
             <!-- Row for Experiences -->
-            <h1 class="text-center text-white pb-4 ">Experiences</h1>
-            <div class="row ">
+            <h1 class="text-center text-dark pb-4 ">Experiences</h1>
+            <div class="row " id="experiences-section">
 
                 <!-- Experience card 1 -->
                 <div class="col-md-6 pl-5 mt-2">
@@ -213,7 +215,7 @@
     </section>
 
     <!--Contact me form section-->
-    <div class="container bg-light text-dark">
+    <div class="container bg-light text-dark" id="contact-me-form">
         <!--Section: Contact v.2-->
         <section class="mb-4">
 
@@ -283,7 +285,7 @@
                     </form>
 
                     <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        <a class="btn btn-primary text-white" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
                     <div class="status"></div>
                 </div>
@@ -305,6 +307,38 @@
         </section>
         <!--Section: Contact v.2-->
     </div>
+
+    <footer class="custom-footer-background py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/safvan-p/" class="social-icon">
+                            <i class="fab fa-linkedin-in text-white fa-2x"></i> <!-- Increase icon size to fa-2x -->
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/safvan8" class="social-icon">
+                            <i class="fab fa-github text-white fa-2x"></i> <!-- Increase icon size to fa-2x -->
+                        </a>
+                        <!-- Facebook -->
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f text-white fa-2x"></i> <!-- Increase icon size to fa-2x -->
+                        </a>
+                    </div>
+
+                    <!-- Copyright -->
+                    <p class="mt-4 mb-0 text-muted">© 2023 Your Website. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
 
     <!-- boostrap depdendcies from https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

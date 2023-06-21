@@ -1,0 +1,30 @@
+.services-skills-experiences{
+    background-color: #E0E0E0; /* Replace with your desired very light color */
+}
+
+.custom-header-background,.custom-footer-background{
+    background-color: #086d6b;
+}
+
+
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    color: #ffffff; /* Replace with your desired icon color */
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ffffff; /* Replace with your desired hover color */
+  }
+  
+  .text-muted {
+    color: #ffffff; /* Replace with your desired text color */
+    font-size: 14px; /* Adjust the text size as needed */
+  }
+  
