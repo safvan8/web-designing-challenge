@@ -21,11 +21,11 @@
 <body>
 
     <!-- header tag for folowing bootsrap symantics-->
-    <header class="custom-header-background" style="position: fixed;width: 100%;z-index: 1;">
+    <header class="custom-header-background" style="position: fixed;width: 100%;z-index: 1;height: 15%;">
         <div class="row text-white">
             <!-- header division left part-->
             <div class="col-9 col-md-6 p-3 pl-5">
-                <h2>Safvan P</h2>
+                <h1 class="pt-2 pb-3 pl-3">Safvan P</h1>
             </div>
 
             <!-- header division right part-->
@@ -39,22 +39,22 @@
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
-                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="#home-section">Home <span
+                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto" style="font-size: larger;">
+                            <li class="nav-item ">
+                                <a class="nav-link pt-2 highlight-text text-white" href="#home-section">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#services-section">Sevices</a>
+                                <a class="nav-link pt-2 highlight-text text-white" href="#services-section">Sevices</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#skills-section">Skills</a>
+                                <a class="nav-link pt-2 highlight-text text-white" href="#skills-section">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#experiences-section">Experience</a>
+                                <a class="nav-link pt-2 highlight-text text-white" href="#experiences-section">Experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#contact-me-form">Contact Me</a>
+                                <a class="nav-link pt-2 highlight-text text-white" href="#contact-me-form">Contact Me</a>
                             </li>
                         </ul>
                     </div>
@@ -63,34 +63,40 @@
         </div>
     </header>
 
-    <section id="home-section" style="padding-top:7rem">
+    <section id="home-section" style="padding-top:7rem"  class="home-section-background">
         <div class="container">
             <div class="row align-items-center">
 
-                <!-- left division,  for placing photo-->
-                <div class="col-md-6">
-                    <img src="https://media.licdn.com/dms/image/D5603AQFavAE2Ccesug/profile-displayphoto-shrink_400_400/0/1679044344508?e=1692835200&v=beta&t=mudngRY-S5paTKLpIEjVKNIeGDijGa3Nqy-2fUFJSIY"
-                        alt="Image Not available" class="img-fluid rounded-circle">
+                <!-- left division, for placing photo -->
+                <div class="col-md-6 text-center">
+                    <img src="https://media.licdn.com/dms/image/D5603AQFavAE2Ccesug/profile-displayphoto-shrink_400_400/0/1679044344508?e=1692835200&v=beta&t=mudngRY-S5paTKLpIEjVKNIeGDijGa3Nqy-2fUFJSIY" alt="Image Not available" class="safvan-profile-image">
+
+                
                 </div>
+
+
                 <!-- Right Division, for wraiting description -->
                 <div class="col-md-6">
-                    <h6>Passionate and self-motivated Java Developer with 1.8 years of experience as a Systems Associate
+                    <h5 style="font-size: 1.8rem; font-weight: bold; line-height: 1.2em; margin: 1rem 0;margin-left: 2.8rem;">About Me</h5>
+                    <h6 class="custom-text-about-me">
+                        Passionate and self-motivated Java Developer with 1.8 years of experience as a Systems Associate
                         at Infosys.<br>
                         I am a quick learner with a genuine passion for coding and a strong interest in exploring new
                         technologies.<br>
                         Seeking a Java Developer role in a dynamic team to work on challenging projects
                         and enhance my programming skills. I am also familiar with C and Python.
-
+                    
                         Committed to pushing boundaries and making a significant impact in the software development
                         industry.
-                    </h6>
+                    </h6>                    
                 </div>
             </div>
         </div>
+        <br><br> <br><br>
     </section>
 
     <!--Section for Services and Skills-->
-    <section class="services-skills-experiences p-5 ">
+    <section class="services-skills-experiences p-5  ">
         <div class="container pl-5 ">
 
             <!-- row for services-->
@@ -331,7 +337,7 @@
                     </div>
 
                     <!-- Copyright -->
-                    <p class="mt-4 mb-0 text-muted">© 2023 Your Website. All rights reserved.</p>
+                    <p class="mt-4 mb-0  text-white footer-copyright-text">© 2023 Your Website. All rights reserved.</p>
                 </div>
             </div>
         </div>
