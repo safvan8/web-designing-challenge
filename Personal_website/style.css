@@ -1,3 +1,24 @@
+.custom-text-about-me {
+    font-family: Consolas;
+    font-size: 1.00rem; 
+    line-height: 1.4;
+    color: #044f4e;
+    text-align: justify;
+    margin: 0;
+    padding: 0.625em; /* Equivalent to 10px */
+    background-color: #ffffff;
+    border: 0.063em solid #0ac7e0; /* Equivalent to 1px */
+    border-radius: 0.313em; /* Equivalent to 5px */
+}
+
+.home-section-background{
+    padding-top: 7rem;
+    background-image: url('images/home-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+
 .services-skills-experiences{
     background-color: #E0E0E0; /* Replace with your desired very light color */
 }
