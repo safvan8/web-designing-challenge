@@ -2,6 +2,30 @@
     background-color: #086d6b;
 }
 
+.highlight-text {
+    position: relative;
+  }
+  
+  .highlight-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(8, 109, 107, 0.8); /* Adjust the background color and transparency as needed */
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(8, 109, 107, 0.8); /* Adjust the box shadow color and spread radius as needed */
+  }
+  
+  .highlight-text a {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFFFFF; /* Adjust the stroke color and thickness as needed */
+  }
+  
+  
+  
 
 .custom-text-about-me {
     font-family: Consolas;
